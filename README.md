@@ -1,23 +1,30 @@
-# 🇮🇳 India Geospatial Map - Interactive Turtle Animation
+# 🇮🇳 India Geospatial Map - Premium 80th Independence Day Dashboard
 
-An elegant, geospatial-data-driven Python project that downloads official administrative boundary coordinates of India and draws a highly accurate map using Python's standard `Turtle` library. The map features a beautiful dark-mode theme, a continuous flag tricolour fill, and a detailed Ashoka Chakra.
+An elegant, geospatial-data-driven Python project that celebrates India's 80th Independence Day. It fetches administrative boundary coordinates of India and draws a highly accurate map in slow motion using Python's standard `Turtle` library. The application features a beautiful, dynamic dark-theme dashboard with a low-opacity background image, a continuous tricolour fill, and detailed national symbols.
 
-![Mockup of Map Output](https://images.unsplash.com/photo-1532375811409-eb464879b244?auto=format&fit=crop&w=1200&q=80)
+---
 
 ## Features
 
-- **Geospatial Accuracy**: Uses authentic geographic coordinate data (from the Survey of India and OpenStreetMap community) rather than basic sketches, resulting in a highly accurate shape.
-- **Tricolour Fill Clipping**: Employs the **Sutherland-Hodgman Polygon Clipping Algorithm** to slice state and national boundaries horizontally into perfect Saffron, White, and Green bands, ensuring a clean and continuous tricolour fill across the map.
-- **Topological Edge Classification**: Automatically classifies boundary edges:
-  - **Outer National Boundary**: Drawn with a bold, crisp white line.
-  - **Internal State Boundaries**: Drawn with thin, subtle navy-gray lines to show administrative divisions without cluttering the map.
-- **State-by-State Animation**: Renders each state and union territory dynamically from North to South, updating a status bar at the bottom in real-time.
-- **Interactive Info Card**: Click on any state or union territory in the window, and a custom-designed details panel in the bottom-left corner displays its Name, Capital, and a fun historical or geographical fact in real-time!
-- **State Capitals Layer**: Displays glowing golden dots (`#FFD700`) at the exact geospatial locations of all state and union territory capitals.
-- **Compass Rose**: Draws a detailed classical navigation compass rose in the top-right corner, enhancing the premium cartographic look of the map.
-- **Precise Ashoka Chakra**: Draw an accurate 24-spoke Navy Blue wheel with central hub and 24 rim dots at the geographic center of India (Madhya Pradesh).
-- **Responsive Layout**: Scales and centers coordinates automatically using an aspect-ratio-locked Equirectangular map projection.
-- **Local Caching & Self-Healing Downloader**: Cache coordinates locally. If the standard Python network downloader fails due to local DNS blocks (e.g. for GitHub Gists), the script automatically falls back to Windows PowerShell's native network stack to download the file.
+- **Geospatial Accuracy**: Uses authentic geographic coordinate data (from OpenStreetMap and Survey of India community sources) to draw states, union territories, and islands.
+- **80th Independence Day Special Loading Screen**: A custom tricolour-themed startup screen (*Saffron, White, and Green*) that greets users.
+- **Slower, Majestic Drawing Animation**: Draws the national boundary first, followed by the tricolour fill, internal state borders, and a final boundary refinement in a slow-motion animation.
+- **Tricolour Fill Clipping**: Employs the **Sutherland-Hodgman Polygon Clipping Algorithm** to slice state and national boundaries horizontally into perfect Saffron, White, and Green flag bands, ensuring a continuous tricolour fill.
+- **Topological Edge Classification**: Groups boundary edges into:
+  - **Outer National Boundary**: Drawn with a bold, crisp white line first (and refreshed on top at the end).
+  - **Internal State Boundaries**: Drawn with thin, subtle slate-navy lines.
+- **Dashboard Sidebar Panels**:
+  - **The Preamble (Top-Right)**: A beautifully typeset card containing the Preamble of the Constitution of India with highlighted key values (*Saffron, White, Green, and Gold*).
+  - **Global Index Standing (Top-Left)**: Displays India's international standings in major global indices (Press Freedom, Hunger Index, HDI, Gender Gap, Henley Passport, and CCPI) using the latest 2025/2026 data.
+  - **Tricolour & Symbols Significance (Middle-Left)**: Explains the representation of flag colors and the Ashoka Chakra.
+  - **India Profile (Bottom-Right)**: Shows core facts (States/UTs count, total area, coastline length, and national animals/birds/flowers).
+- **Interactive Info Card (Bottom-Left)**: Interactive point-in-polygon detection lets you left-click on any state or union territory to view its capital name and fun facts in real-time.
+- **Exaggerated Lakshadweep & Andaman Islands**: Enhances the visibility and click-interactivity of small island groups (e.g. Lakshadweep's Kavaratti, Agatti, Andrott, Kalpeni, and Minicoy islands) by representing them as visible octagons.
+- **State Capitals Layer**: Displays glowing golden dots (`#FFD700`) at the exact coordinates of all state and UT capitals.
+- **Precise Ashoka Chakra**: Draws an accurate 24-spoke Navy Blue wheel with a central hub and 24 rim dots at the geographic center of India.
+- **Borderless Fullscreen Mode**: The window launches automatically in borderless fullscreen. Press the **`Escape`** key to close/exit the application window safely at any time.
+- **Low-Opacity Backdrop**: Automatically downloads, resizes, and blends a patriotic Getty Images background artwork at a subtle **12% opacity** behind the dashboard.
+- **Local Caching & PowerShell Fallback**: Coordinates are cached locally. If the Python network stack is blocked, it falls back to PowerShell to download files seamlessly.
 
 ---
 
