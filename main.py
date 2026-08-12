@@ -120,7 +120,11 @@ loading_pen.goto(0, 20)
 loading_pen.color(WHITE)
 loading_pen.write("INDIA INTERACTIVE MAP", align="center", font=("Arial", 28, "bold"))
 
-loading_pen.goto(0, -30)
+loading_pen.goto(0, -20)
+loading_pen.color(GOLD_COLOR)
+loading_pen.write("Developed by AJ", align="center", font=("Georgia", 13, "bold"))
+
+loading_pen.goto(0, -60)
 loading_pen.color(GREEN)
 loading_pen.write("Loading geospatial coordinates...", align="center", font=("Arial", 13, "normal"))
 
@@ -1228,6 +1232,10 @@ def main():
         title_pen.goto(0, -actual_h / 2 + 13)
         title_pen.color(TEXT_MUTED)
         title_pen.write("Drawn with accurate geospatial boundary coordinates", align="center", font=("Arial", 9, "italic"))
+        
+        title_pen.goto(0, -actual_h / 2 + 2)
+        title_pen.color(GOLD_COLOR)
+        title_pen.write("Developed by AJ", align="center", font=("Georgia", 8, "bold"))
         
         # 12. Draw static dashboard panels (Tricolour Significance & India Profile)
         draw_static_panels()
