@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+data/bg_orig.jpg
+data/bg_processed.gif
