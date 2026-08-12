@@ -1084,6 +1084,15 @@ def main():
         map_pen = turtle.Turtle(visible=False)
         map_pen.speed(0)
 
+        # Draw "Developed by AJ" signature in top-right corner (visible during drawing)
+        sig_pen = turtle.Turtle(visible=False)
+        sig_pen.speed(0)
+        sig_pen.penup()
+        sig_pen.color(GOLD_COLOR)
+        sig_pen.goto(actual_w / 2 - 40, actual_h / 2 - 25)
+        sig_pen.write("Developed by AJ", align="right", font=("Georgia", 10, "bold"))
+        screen.update()
+
         # 4. Classify boundaries
         print("Extracting boundaries...")
         outer_edges, internal_edges = classify_edges(states_data)
@@ -1229,11 +1238,11 @@ def main():
         title_pen.color(TEXT_COLOR)
         title_pen.write("Sovereign - Socialist - Secular - Democratic - Republic", align="center", font=("Arial", 12, "normal"))
         
-        title_pen.goto(0, -actual_h / 2 + 13)
+        title_pen.goto(0, -actual_h / 2 + 18)
         title_pen.color(TEXT_MUTED)
         title_pen.write("Drawn with accurate geospatial boundary coordinates", align="center", font=("Arial", 9, "italic"))
         
-        title_pen.goto(0, -actual_h / 2 + 2)
+        title_pen.goto(0, -actual_h / 2 + 6)
         title_pen.color(GOLD_COLOR)
         title_pen.write("Developed by AJ", align="center", font=("Georgia", 8, "bold"))
         
