@@ -1,5 +1,9 @@
 # 🇮🇳 India Geospatial Map - Premium 80th Independence Day Dashboard
 
+[![Search Keywords](https://img.shields.io/badge/Keywords-Independence__Day__|__India__Map__|__Patriotic__Dashboard-orange.svg)](#)
+[![Independence Day Celebration](https://img.shields.io/badge/Celebration-80th__Independence__Day-red.svg)](#)
+[![Python Version](https://img.shields.io/badge/Python-3.8+-blue.svg)](#)
+
 An elegant, geospatial-data-driven Python project that celebrates India's 80th Independence Day. It fetches administrative boundary coordinates of India and draws a highly accurate map in slow motion using Python's standard `Turtle` library. The application features a beautiful, dynamic dark-theme dashboard with a low-opacity background image, a continuous tricolour fill, and detailed national symbols.
 
 ---
@@ -63,3 +67,11 @@ python main.py
 
 ## Data Attribution
 The underlying state-level coordinates are sourced from the open-source community GIS maps of India (DataMeet/Survey of India variants).
+
+---
+
+## Keywords & Search Tags
+To optimize visibility and indexing on search engines (like Google) and GitHub search, this project is indexed under the following keywords:
+* **Independence Day Queries**: `independence day`, `indian independence day`, `80th independence day`, `india independence day 2026`, `celebrate independence day`
+* **Python & Turtle Tags**: `india map python`, `python turtle india map`, `geospatial india map`, `interactive map of india`, `turtle graphics india`
+* **Patriotic Themes**: `har ghar tiranga`, `azadi ka amrit mahotsav`, `constitution preamble dashboard`, `satyameva jayate map`
